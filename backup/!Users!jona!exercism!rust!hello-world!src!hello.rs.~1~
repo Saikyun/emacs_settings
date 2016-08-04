@@ -1,0 +1,7 @@
+pub fn hello(text: Option<&'static str>) -> &'static str {
+    match text {
+        Some(text) => text,
+        None => "Hello, World!"
+    }
+}
+            

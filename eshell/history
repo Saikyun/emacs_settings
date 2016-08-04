@@ -1,0 +1,73 @@
+ls
+cargo run
+cargo run
+exit
+cargo run
+cargo
+ls
+cd programmering/rust/run_jump_roll/
+cargo run
+ls
+cargo run
+cargo run
+cargo run
+cargo run
+cargo run
+cargo run
+cargo run
+cargo run
+cargo run
+cargo run
+cargo run
+cargo run
+cargo run
+cargo run
+cargo run
+cd ..
+cd ..
+cargo run
+cargo run
+cargo run
+cargo run
+cargo run
+cargo run
+cargo run
+cargo run
+cargo run
+cargo run
+cargo run
+cargo run
+cargo run
+cargo run
+cargo run
+cargo run
+cargo run
+cargo run
+cargo run
+cargo run
+RUST_BACKTRACE=1 cargo run
+RUST_BACKTRACE=1 cargo run
+RUST_BACKTRACE=1 cargo run
+RUST_BACKTRACE=1 cargo run
+RUST_BACKTRACE=1 cargo run
+RUST_BACKTRACE=1 cargo run
+RUST_BACKTRACE=1 cargo run
+RUST_BACKTRACE=1 cargo run
+RUST_BACKTRACE=1 cargo run
+RUST_BACKTRACE=1 cargo run
+RUST_BACKTRACE=1 cargo run
+RUST_BACKTRACE=1 cargo run
+RUST_BACKTRACE=1 cargo run
+RUST_BACKTRACE=1 cargo run
+RUST_BACKTRACE=1 cargo run
+RUST_BACKTRACE=1 cargo run
+RUST_BACKTRACE=1 cargo run
+cargo run
+ls
+exit
+cd ~
+rm .emacs\~
+ls
+vim .emulator_console_auth_token
+cat .emulator_console_auth_token
+rm .emulator_console_auth_token

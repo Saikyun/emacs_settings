@@ -1,0 +1,151 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Tue Jul 12 17:04:22 2016
+;; Desktop file format version 206
+;; Emacs version 24.5.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (22405 1782 947392 0) (desktop . "206") "jona@D3V0PS.local" nil nil ((((font-backend mac-ct ns) (fontsize . 0) (font . "-*-Menlo-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (vertical-scroll-bars . right) (foreground-color . "#333333") (background-color . "#FFFFFF") (line-spacing) (left-fringe . 10) (right-fringe . 11) (menu-bar-lines . 1) (tool-bar-lines . 1) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (alpha) (fullscreen) (horizontal-scroll-bars . t) (display-type . color) (background-mode . light) (cursor-color . "#0FB300") (environment) (frameset--id . "19D8-1C26-E6C6-BDA1") (frameset--mini t . t) (height . 71) (width . 262) (modeline . t) (minibuffer . t) (unsplittable) (left . 1) (top . 24) (right-divider-width . 0) (bottom-divider-width . 0) (icon-name) (visibility . t) (display . "D3V0PS.local") (explicit-name) (tool-bar-position . top)) ((min-height . 4) (min-width . 20) (min-height-ignore . 3) (min-width-ignore . 16) (min-height-safe . 1) (min-width-safe . 4) (min-pixel-height . 56) (min-pixel-width . 140) (min-pixel-height-ignore . 42) (min-pixel-width-ignore . 112) (min-pixel-height-safe . 14) (min-pixel-width-safe . 28)) hc (pixel-width . 1870) (pixel-height . 980) (total-width . 267) (total-height . 70) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 932) (pixel-height . 980) (total-width . 133) (total-height . 70) (normal-height . 1.0) (normal-width . 0.5) (buffer "game.rs" (selected . t) (hscroll . 0) (fringes 10 11 nil) (margins 3) (scroll-bars 15 3 t nil) (vscroll . 0) (dedicated) (point . 11840) (start . 10560))) (leaf (last . t) (pixel-width . 938) (pixel-height . 980) (total-width . 134) (total-height . 70) (normal-height . 1.0) (normal-width . 0.5) (buffer "attack.rs" (selected) (hscroll . 0) (fringes 10 11 nil) (margins 3) (scroll-bars 15 3 t nil) (vscroll . 0) (dedicated) (point . 439) (start . 142)))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '("Flash" "e" "rotatte" "a" "selecte" "color" "start" "startat" "," "render" "resour"))
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/.emacs.d/" "~/programmering/rust/run_jump_roll/map.json" "~/programmering/rust/run_jump_roll/src/engine/updateable.rs" "~/programmering/rust/run_jump_roll/src/views/creature.rs" "~/programmering/rust/run_jump_roll/src/views/map_editor/map.rs" "~/.emacs.d/init.el" "~/programmering/rust/run_jump_roll/map.json" "~/programmering/rust/run_jump_roll/src/views/mod.rs" "~/programmering/rust/run_jump_roll/src/views/map_editor/mod.rs" "~/programmering/rust/run_jump_roll/src/views/map_editor/map.rs" "~/programmering/rust/run_jump_roll/src/views/main_menu.rs" "~/programmering/rust/run_jump_roll/src/engine/mod.rs" "~/programmering/rust/run_jump_roll/src/views/creature.rs" "~/programmering/rust/run_jump_roll/src/engine/resources.rs" "~/programmering/rust/run_jump_roll/src/engine/gfx/sprite.rs" "~/programmering/rust/run_jump_roll/src/engine/gfx/mod.rs" "~/programmering/rust/run_jump_roll/src/views/attack.rs" "~/programmering/rust/run_jump_roll/src/views/game.rs" "~/programmering/rust/run_jump_roll/src/engine/gfx/sprite.rs" "~/programmering/rust/run_jump_roll/src/views/creature.rs"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/Users/jona/programmering/rust/run_jump_roll/src/views/game.rs"
+  "game.rs"
+  'rust-mode
+  '(linum-mode linum-relative-mode)
+  11840
+  '(1265 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/jona/programmering/rust/run_jump_roll/src/views/attack.rs"
+  "attack.rs"
+  'rust-mode
+  '(linum-mode linum-relative-mode)
+  439
+  '(2119 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/jona/programmering/rust/run_jump_roll/src/views/creature.rs"
+  "creature.rs"
+  'rust-mode
+  '(linum-mode linum-relative-mode)
+  560
+  '(2247 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/jona/programmering/rust/run_jump_roll/src/engine/updateable.rs"
+  "updateable.rs"
+  'rust-mode
+  '(linum-mode linum-relative-mode)
+  141
+  '(97 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/jona/programmering/rust/run_jump_roll/src/views/map_editor/mod.rs"
+  "mod.rs"
+  'rust-mode
+  '(linum-mode linum-relative-mode)
+  3629
+  '(13537 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/jona/programmering/rust/run_jump_roll/src/views/map_editor/map.rs"
+  "map.rs"
+  'rust-mode
+  '(linum-mode linum-relative-mode)
+  717
+  '(1381 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/jona/.emacs.d/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(linum-mode linum-relative-mode)
+  1969
+  '(1830 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . prefer-utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/jona/programmering/rust/run_jump_roll/src/engine/gfx/sprite.rs"
+  "sprite.rs"
+  'rust-mode
+  '(linum-mode linum-relative-mode)
+  2085
+  '(2258 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/jona/programmering/rust/run_jump_roll/src/engine/gfx/mod.rs"
+  "mod.rs"
+  'rust-mode
+  '(linum-mode linum-relative-mode)
+  1717
+  '(1457 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/jona/programmering/rust/run_jump_roll/src/views/main_menu.rs"
+  "main_menu.rs"
+  'rust-mode
+  '(linum-mode linum-relative-mode)
+  2556
+  '(1432 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/jona/programmering/rust/run_jump_roll/src/views/mod.rs"
+  "mod.rs"
+  'rust-mode
+  '(linum-mode linum-relative-mode)
+  127
+  '(127 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/jona/programmering/rust/run_jump_roll/src/engine/resources.rs"
+  "resources.rs"
+  'rust-mode
+  '(linum-mode linum-relative-mode)
+  190
+  '(25 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
