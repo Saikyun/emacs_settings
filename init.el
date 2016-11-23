@@ -3,6 +3,18 @@
              '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 
+(setq backup-directory-alist `(("." . "~/.backups")))
+(setq backup-by-copying t)
+(setq delete-old-versions t
+  kept-new-versions 6
+  kept-old-versions 2
+  version-control t)
+
+(setq backup-directory-alist
+	  `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+	  `((".*" ,temporary-file-directory t)))
+
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize))
 
@@ -22,7 +34,7 @@
  '(mouse-wheel-scroll-amount (quote (1 ((shift) . 1) ((control)))))
  '(ns-alternate-modifier (quote none))
  '(ns-command-modifier (quote meta))
- '(ns-right-alternate-modifier (quote meta))
+ '(ns-right-alternate-modifier (quote super))
  '(tab-width 4))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -71,5 +83,28 @@
 
 (setq visible-mark-faces '(visible-mark-face-2 visible-mark-face1))
 (setq visible-mark-max 2)
+
 (require 'visible-mark)
 (global-visible-mark-mode 1)
+
+(setq racer-cmd "~/programmering/racer/target/release/racer")
+(setq racer-rust-src-path "~/programmering/rust/rust/src/")
+
+(require 'rust-mode)
+(add-hook 'rust-mode-hook #'racer-mode)
+(add-hook 'racer-mode-hook #'eldoc-mode)
+
+(add-hook 'racer-mode-hook #'company-mode)
+
+(define-key rust-mode-map (kbd "TAB") #'company-indent-or-complete-common)
+(setq company-tooltip-align-annotations t)
+
+(set-default-font
+ "-*-Gabriele Light Ribbon FG-light-normal-normal-*-14-*-*-*-p-0-iso10646-1")
+
+(add-hook 'php-mode-hook
+          '(lambda ()
+             (require 'company-php)
+             (company-mode t)
+             (add-to-list 'company-backends 'company-ac-php-backend)))
+(put 'downcase-region 'disabled nil)
