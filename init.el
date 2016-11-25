@@ -26,7 +26,8 @@
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
-   ["#2d3743" "#ff4242" "#74af68" "#dbdb95" "#34cae2" "#008b8b" "#00ede1" "#e1e1e0"])
+   ["#2d3743" "#ff4242" "#74af68" "#dbdb95"
+	"#34cae2" "#008b8b" "#00ede1" "#e1e1e0"])
  '(custom-enabled-themes (quote (leuven)))
  '(line-number-mode nil)
  '(mouse-scroll-delay 0.25)
@@ -108,3 +109,48 @@
              (company-mode t)
              (add-to-list 'company-backends 'company-ac-php-backend)))
 (put 'downcase-region 'disabled nil)
+
+										; Keyboard movement
+(define-key input-decode-map [?\C-i] [C-i])              ; if we don't do this, tab will be previous-logical-line
+(global-set-key (kbd "<C-i>") 'previous-logical-line)
+(global-set-key (kbd "C-j") 'next-logical-line)
+
+(global-set-key (kbd "C-å") (kbd "/"))
+
+(global-set-key (kbd "C-o") 'backward-char)
+(global-set-key (kbd "C-p") 'forward-char)
+(global-set-key (kbd "C-n") 'delete-backward-char)
+(define-key input-decode-map [?\C-m] [C-m])              ; if we don't do this, enter will delete-forward-char
+(global-set-key (kbd "<C-m>") 'delete-forward-char)
+
+(global-set-key (kbd "M-i") 'previous-logical-line)	
+(global-set-key (kbd "C-j") 'next-logical-line)
+
+(global-set-key (kbd "M-o") 'backward-word)
+(global-set-key (kbd "M-p") 'forward-word)
+(global-set-key (kbd "M-n") 'backward-kill-word)
+(global-set-key (kbd "M-m") 'kill-word)
+(global-set-key (kbd "C-f") 'newline)
+
+(add-hook 'minibuffer-setup-hook
+          (lambda ()
+			(define-key input-decode-map [?\C-i] [C-i])              ; if we don't do this, tab will be previous-logical-line
+			(local-set-key (kbd "<C-i>") 'previous-logical-line)
+			(local-set-key (kbd "C-j") 'next-logical-line)
+
+			(local-set-key (kbd "C-å") (kbd "/"))
+
+			(local-set-key (kbd "C-o") 'backward-char)
+			(local-set-key (kbd "C-p") 'forward-char)
+			(local-set-key (kbd "C-n") 'delete-backward-char)
+			(define-key input-decode-map [?\C-m] [C-m])              ; if we don't do this, enter will delete-forward-char
+			(local-set-key (kbd "<C-m>") 'delete-forward-char)
+
+			(local-set-key (kbd "M-i") 'previous-logical-line)	
+			(local-set-key (kbd "C-j") 'next-logical-line)
+
+			(local-set-key (kbd "M-o") 'backward-word)
+			(local-set-key (kbd "M-p") 'forward-word)
+			(local-set-key (kbd "M-n") 'backward-kill-word)
+			(local-set-key (kbd "M-m") 'kill-word)
+			(local-set-key (kbd "C-f") 'newline)))
