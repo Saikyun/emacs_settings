@@ -4,9 +4,23 @@
 (setq mc/cmds-to-run-for-all
       '(
 		c-electric-semi&comma
+		comment-region
+		electric-newline-and-maybe-indent
+		forward-sentence
 		indent-for-tab-command
+		indent-rigidly
+		kill-region
+		paredit-backward-kill-word
+		paredit-forward-slurp-sexp
+		paredit-open-round
+		paredit-splice-sexp
+		paredit-splice-sexp-killing-backward
+		typescript-insert-and-indent
+		uncomment-region
 		))
 
 (setq mc/cmds-to-run-once
       '(
+		backward-kill-sentence
+		keyboard-escape-quit
 		))
